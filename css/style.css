@@ -77,3 +77,39 @@ body, html {
         	margin: 15% auto;
 
       	}
+@media (max-width : 500px) {
+  .container-fluid {
+    position : absolute;
+    z-index: 1;
+    top: 100px;
+    left: 0px;
+  }
+  .button-container {
+    position:absolute;
+    top: 60px;
+    left: 100px;
+  }
+  #timediv {
+      background: transparent;
+      opacity: 0.2;
+      text-align: center;
+      width: 148px;
+      color: white;
+      border: 1px white groove;
+      position: absolute;
+      top: 60px;
+      left: 140px;
+      transition: all 1.0s ease-in-out;
+
+  }
+  #goodnight {
+    text-align: center;
+    font-size: 4.5rem;
+    position : absolute;
+    z-index: 1;;
+    font-weight : 600;
+    color : white;
+    left : 20px;
+  }
+
+}
