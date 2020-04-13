@@ -48,10 +48,10 @@ var Particles = (function(window, document) {
         maxParticles: 150,
         sizeVariations: 5,
         showParticles: true,
-        speed: 0.5,
-        color: '#f1fcfc',
+        speed: 1.0,
+        color: '#48F2E3',
         minDistance: 120,
-        connectParticles: true,
+        connectParticles: false,
       };
 
       _.element = null;
@@ -563,3 +563,31 @@ var Particles = (function(window, document) {
     window.Particles = Particles;
   }
 })();
+
+Particles.init({
+  // normal options
+  selector: '.background',
+  maxParticles: 450,
+  // options for breakpoints
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        maxParticles: 200,
+        color: '#48F2E3',
+        connectParticles: false
+      }
+    }, {
+      breakpoint: 425,
+      options: {
+        maxParticles: 100,
+        connectParticles: false
+      }
+    }, {
+      breakpoint: 320,
+      options: {
+        maxParticles: 0 // disables particles.js
+      }
+    }
+  ]
+});
