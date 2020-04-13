@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'GOODNIGHT, ASSHOLES!'; /* The text */
+var txt = 'BOOM, SELAMAT ANDA JOMBLO :P!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
